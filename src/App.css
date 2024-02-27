@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+  background: linear-gradient(#FFFFF9 0%, #FFF9B5 100%);
+  font-family: "Roboto", sans-serif;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header{
+  height: 80px;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("./assets/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.main-container .left{
+  background: url("./assets/1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 600px;
+  width: 30%;
+}
+
+.main-container .side-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container .side-image img{
+  width: 100%;
+}
+
+.main-container .right{
+  width: 60%;
+}
+.right .top p{
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.right .top ul li{
+  font-size: 15px;
+}
+.right .bottom p span{
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.instalatoins{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.instalatoins p{
+  font-size: 16px;
+}
+
+.pumps{
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.pumps img{
+  height: 400px;
+  width: 80%;
+  margin-top: 30px;
+}
+
+.pump-content{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 18px;
+  border-bottom: 2px solid red;
+}
+.pump-content p{
+  font-size: 15px;
+  margin-top: 50px;
+}
+
+
+.footer-container{
+  text-align: center;
+}
+.footer-container .top h2{
+  font-size: 17px;
+  margin: 30px 0;
+}
+.footer-container .top p{
+  font-size: 16px;
+  margin: 20px 0;
+}
+.footer-container .top p span{
+  color: red;
+}
+.footer-container .bottom{
+   background-color: red;
+   color: #fff;
+   padding: 40px 0;
+   margin-top: 30px;
+}
+.bottom .footer-links{
+  display: flex;
+  justify-content: space-evenly;
+}
+.bottom .footer-links{
+  list-style: none;
+}
+.bottom .footer-links li a{
+  color: #fff;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+
+
+/* Use a media query to add a breakpoint at 768px: */
+@media only screen and (max-width: 768px) {
+  .header{
+    /* width: 600px; */
+    justify-content: center;
+  }
+  .instalatoins p{
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: -50px;
+  }
+  .main-container{
+    flex-direction: column;
+  }
+  .main-container .left{
+    margin-top: 100px;
+  }
+  .right .top p{
+    font-size: 13px;
+  }
+  .right .bottom p span{
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .right .bottom p{
+    font-size: 13px;
+    margin: 30px;
+  }
+  .right .top ul li{
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .pumps img{
+    width: 300px;
+    height: 150px;
+    background-position: center;
+  }
+  .pump-content p{
+    font-size: 13px;
+  }
+  .footer-container .top h2{
+    font-size: 14px;
+}
+  .footer-container .top p{
+    font-size: 12px;
+  }
+  .bottom .footer-links li a{
+    font-size: 10px;
+  }
+  
+}
